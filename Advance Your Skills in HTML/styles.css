@@ -1,0 +1,29 @@
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 100vh;
+    border-right: 4px solid blue;
+    font-family: 'Varta', sans-serif;
+    font-size: 24px;
+    list-style-type: none;
+  }
+
+  i {
+  padding: 3px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    color:white;
+    background: blue;
+  }
+  
+  nav a:hover i {
+    color: yellow;
+  }
