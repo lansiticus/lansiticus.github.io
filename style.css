@@ -25,7 +25,16 @@ body{
 img{
     width: 300px;
 }
-a {
+
+.icon{
+    width: 50px;
+}
+
+.LI{
+    font-size: 30px;
+}
+
+.button {
     color:black;
     font-weight: bold;
     background: grey;
@@ -37,7 +46,7 @@ a {
     display: inline-block;
 }
 
-a:hover {
+.button:hover {
     background: #818D92;
 }
 
