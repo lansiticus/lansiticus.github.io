@@ -6,6 +6,7 @@
   <style>
     body {
       font-size: 18pt;
+      background: url("images/travel-globe-light.png") no-repeat 45% 65% fixed;
     }
     h2 {
       font-size: 115%;
@@ -21,28 +22,28 @@
 </p>
 
 <div style="text-align: center">
-  <img src="images/eagles1.jpg" style="border:2px solid black;" width="251" height="200"
-    alt="silver eagles on a door plate">
-  <img src="images/eagles2.jpg" style="border:2px solid black;" width="251" height="200"
-    alt="stone eagle on building facing viewer">
-  <img src="images/eagles3.jpg" style="border:2px solid black;" width="372" height="200"
-    alt="brass eagle sculpture in center; stone relief eagles on building to left and right">
+  <img src="images/eagles1.jpg"  width="20%" style="transform: rotate(-020deg) translateX(30px) translateY(25px); clip-path: ellipse(50% 40% at 50% 50%);"
+    sizes="20vw" alt="silver eagles on a door plate">
+  <img src="images/eagles2.jpg" style="clip-path: polygon(50% 0%,100% 50%, 50% 100%, 0% 50%);" width="20%"
+  sizes="20vw" alt="stone eagle on building facing viewer">
+  <img src="images/eagles3.jpg" style="transform: rotate(020deg) translateX(-30px) translateY(25px); clip-path: ellipse(50% 40% at 50% 50%);" width="20%"
+   alt="brass eagle sculpture in center; stone relief eagles on building to left and right">
 </div>
 
 <hr>
   <h2>
-    <img src="images/german_flag.png" style="padding: 10px 10px; vertical-align: middle; width: 107px;">
+    <img src="images/german_flag.png" style="padding: 10px 10px; vertical-align: middle; width: 107px;" width="20%">
     Deutsches Museum, Munich
-    <img src="images/munich_flag.png" style="vertical-align: middle; width: 107px;">
+    <img src="images/munich_flag.png" style="vertical-align: middle; width: 107px;" width="20%">
   </h2>
   
   <p>
-    <img src="images/clock.jpg" style="float: left; padding: 10px 10px;">
+    <img src="images/clock.jpg" style="float: left; padding: 10px 10px;" width="20%">
     
     The Deutsches Museum is one of the premier museums of science and technology in all of Europe.
     Here you will find sections devoted to manufacturing, ships, energy production, and aviation.
     
-    <img src="images/city_view.jpg" style="float: right; padding: 10px 10px; ">
+    <img src="images/city_view.jpg" style="float: right; padding: 10px 10px; " width="20%">
 
     There’s a planetarium on the top floor; an outdoor area gives you a fantastic view of the city.
     
@@ -53,6 +54,31 @@
     The museum is open from 9 a.m. to 5 p.m. every day except some holidays.
     The S-Bahn Isartor and U-Bahn Fraunhoferstraße stations are near the museum.
   </p>
+  <br>
+  <h2>Responsive Images</h2>
+  <div style="text-align:center">
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/arch_face300.jpg"> 
+      <source media="(max-width: 1000px)" srcset="images/arch_face600.jpg">
+      <source srcset="images/arch_face1000.jpg 1000w">
+      <img src="images/arch_face600.jpg">
+    </picture>
+</div>
+
+<h1>Scenes from Belgium</h1>
+
+<p>
+  Here is a closeup of the top of a clock at Mont des Arts (Kunstberg) in Brussels, Belgium.
+</p>
+<div>
+  <img src="images/clock500.jpg"
+  srcset="  images/clock300.jpg 300w,
+  images/clock500.jpg 500w,
+  images/clock800.jpg 800w"
+  sizes="(max-width: 500px) 300px,
+        (max-width: 800px) 500px,
+        800px">
+</div>
 
 </body>
 </html>
