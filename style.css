@@ -1,18 +1,22 @@
-/* Color Palletes */
-/* Slate Grey 818D92 */
-/* Deep Space Sparkle 586A6A */
-/* Grullo B9A394 */
-/* Pale Silver D4C5C7 */
-/* Languid Lavender DAD4EF */
+/*Color Pallete
+Slate Grey 818D92
+Deep Space Sparkle 586A6A
+Grullo B9A394
+Pale Silver D4C5C7
+Languid Lavender DAD4EF */
 
-/* Global settings */
-/* ------------------------------- */
 html {
     box-sizing: border-box;
   }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+header{
+    background:#D4C5C7;
+    text-align: center;
+}
 
 body{
     color:#586A6A;
@@ -22,10 +26,41 @@ body{
     font-size: 15px;
     line-height: 1.5;
 }
+
+footer{
+    background: #D4C5C7;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Quattrocento', serif;
+}
+
+h1 {
+    font-size: 75px;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
 img{
     width: 300px;
 }
 
+.content-wrap{
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
 .icon{
     width: 50px;
 }
@@ -35,45 +70,17 @@ img{
 }
 
 .button {
-    color:black;
-    font-weight: bold;
-    background: grey;
-    padding: 5px;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    border-radius: 5%;
     display: inline-block;
+    margin: 10px 50px;
 }
 
 .button:hover {
     background: #818D92;
 }
 
-h1 {
-    font-size: 75px;
-    margin: 0;
-    line-height: 1;
+footer img {
+    width: 50px;
 }
-h2 {
-    font-size: 35px;
-    margin: 0;
-}
-
-h1, h2 {
-    font-family: 'Quattrocento', serif;
-}
-.content-wrap{
-    max-width: 900px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-h3 {
-    margin-bottom: 0;
-}
-
 .item-details h3 + p {
     font-style: italic;
 }
@@ -90,18 +97,12 @@ h3 {
 .divider > section:last-of-type{
     border-bottom: none;
 }
-/* Profile styles */
-/* -------------------------------- */
-header{
-    background:#DAD4EF;
-    text-align: center;
+
+.projects{
+    color: #586A6A;
+    background: #DAD4EF;
 }
 
-/* Projects
------------------------------------- */
-.projects{
-    background: #818D92;
-}
 .project-items {
     overflow: hidden;
 }
@@ -109,43 +110,27 @@ header{
 .project-items h3 {
     margin-top: 0;
 }
-/* Work Experience
-------------------------------------- */
+
 .experience{
-    background: #B9A394;
+       color: #586A6A;
+       background: #D4C5C7;
 }
  
-
-/* Education
--------------------------------------- */
 .education{
-background-image: url(../images/books.jpg);
-background-size: cover;
-background-position: top right;
-padding-bottom: 100px;
+    background-image: url(../images/books.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
 }
 
 .education p {
     width: 60%;
 }
 
-/* Contact Info
--------------------------------------- */
-
-.footer{
-    background: #D4C5C7;
-    text-align: center;
-}
-
 .contact-list{
     list-style-type:none;
     padding: 0;
 }
-
-
-
-/* Responsive
--------------------------------------- */
 
 @media screen and (min-width:550px){
     .contact-list{
