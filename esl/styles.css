@@ -7,33 +7,35 @@
 
 span {
     font-family: 'Malgun Gothic', sans-serif;
+    word-break: keep-all;
 }
 
 .header p {
-    font-size: 2em;
-    padding-top: 1.5em;
+    font-size: 2.5vw;
+    padding-top: 1.5rem;
 }
 
 .header p:last-child {
-    font-size: 2em;
-    padding-top: 1em;
+    font-size: 2rem;
+    padding-top: 1rem;
 }
 
 .header h1 {
-    font-size: 4em;
-    margin-top: .5em;
+    font-size: 10vw;
+    margin-top: .5rem;
 }
 
 .btn {
-    max-height: 2.5em;
-    margin-top: 1em;
+    max-height: 2.5rem;
+    margin-top: 1rem;
     border: none;
-    padding: .75em 1.25em;
+    padding: .75rem 1.25rem;
     font-family: inherit;
-    font-size: 1em;
+    font-size: .5rem;
     color: white;
     background-color: navy;
 }
+
 .header {
     background: url(/esl/bgimg.jpg);
     background-attachment: fixed;
@@ -46,38 +48,40 @@ span {
 .header-image {
     float: left;
     width: 33%;
-    margin-top: 3em;
-    padding-right: 3em;
-    padding-left: 2em;
+    margin-top: 3rem;
+    padding-right: 3vw;
+    padding-left: 2vw;
     text-align: right;
 }
 
 .header-image img {
-    width: 80%
+    width: 80%;
 }
 
 .header-info {
     float: right;
-    width: 50%;
-    margin-right: 3em;
+    width: 50vw;
+    margin-right: 3rem;
+    padding-top: 1rem;
 }
 
 .description {
     width: 100vw;
-    padding: 1em 0;
-    font-size: 2em;
+    padding: 1rem 0;
+    font-size: 2rem;
     background-color: aqua;
     text-align: center;
 }
 
 .description p {
-    padding-bottom: .5em;
+    padding-bottom: .5rem;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
     clear: both;
+    padding: 2rem;
 }
 
 .container::after {
@@ -87,41 +91,41 @@ span {
 }
 
 .product-versions-title {
-    padding: 1em 0;
-    font-size: 2em;
+    padding: 1rem 0;
+    font-size: 2rem;
     text-align: center;
 }
 
 .product-versions{
-    padding: 1em 0;
+    padding: 1rem 0;
     background-color: aqua;
 }
 
 .product-version{
     float: left;
-    width: 33%;
+    width: 32%;
     border: 1px solid grey;
     text-align: center;
     background-color: white;
 }
 
 .version-title {
-    padding: .25em 0;
-    font-size: 3em;
+    padding: .25rem 0;
+    font-size: 2rem;
     color: black;
 }
 
 .version-price {
-    padding: .75em 0;
-    font-size: 2em;
+    padding: .75rem 0;
+    font-size: 1.5rem;
     background-color: lightgray;
 }
 
 .version-item{
     border-bottom: 1px solid grey;
-    width: 100%;
-    padding: .75em 0;
-    font-size: 1.25em;
+    width: 90%;
+    padding: .75rem 0;
+    font-size: 1rem;
     color: black;
 }
 
@@ -141,14 +145,14 @@ span {
 }
 
 .social {
-    padding: 1em 0;
-    font-size: 1.5em;
+    padding: 1rem 0;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 
 .social-links {
-    margin-top: .75em;
+    margin-top: .75rem;
 }
 
 .social-links img {
@@ -156,26 +160,98 @@ span {
 }
 
 .social-link {
-    margin: 0 .25em;
+    margin: 0 .25rem;
 }
 
 .footer {
-    padding: 1em 0;
+    padding: 1rem 0;
     font-variant: small-caps;
     text-align: center;
     background-color: gray;
 }
 
 .footer-links {
-    margin-bottom: .75em;
-    font-size: 1.5em;
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
 }
 
 .footer-link {
-    margin: 0 .5em;
+    margin: 0 .25rem;
 }
 
 .copyright {
     font-style: italic;
-    font-size: 1em;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:1600px){
+
+    .header-image {
+        float: left;
+        width: 33%;
+        margin-top: 3rem;
+        padding-right: 3vw;
+        padding-left: 2vw;
+        text-align: right;
+    }
+    
+    .header-image img {
+        width: 80%;
+    }
+
+    
+}
+
+@media screen and (max-width:1599px){
+    .header-image {
+        display: none;
+    }
+
+    .header-info {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .header-info p span {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width:670px){
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .btn {
+
+        font-size: 1rem;
+    }
+
+    .version-price {
+        font-size: 2em;
+    }
+    .version-title {
+        font-size: 3rem;
+    }
+    
+    .product-version{
+        width: 33%;
+    }
+    
+    .footer-link {
+        margin: 0 .5rem;
+    }  
 }
