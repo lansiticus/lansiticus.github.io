@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: navy;
+}
+h1 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 6vw;
+    padding-top: .5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+    text-align: center;
+    height: 15vh;
+    align-items: center;
+}
+
+ul {
+    width: 10 rem;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 66vw;
+}
+
+.icon {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 43vh;
+}
+
+/* 
+p {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+div p:last-child {
+    font-size: 1em;
+}
+
+
+
+main img {
+    width: 15rem;
+    height: 12rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+
+    header {
+        height: 25vh;
+    }
+
+    main {
+        height: 60vh;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .jobs {
+        display: flex;
+        justify-content: center;
+        flex: 1 0 auto;
+    }
+
+    .jobtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    header {
+        height: 15vh;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    main img {
+        width: 12rem;
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    .jobs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jobtext {
+        height: 1.5em;
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+*/
