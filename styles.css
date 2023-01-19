@@ -44,8 +44,7 @@ main {
 }
 
 main img {
-    width: 15rem;
-    height: 12rem;
+    width: 15vw;
     padding: 1rem;
 }
 
@@ -80,11 +79,11 @@ ul {
     }
 
     h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
     
     h2 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     header {
@@ -97,6 +96,7 @@ ul {
         justify-items: center;
         text-align: center;
     }
+
 
     .jobs {
         display: flex;
@@ -124,9 +124,17 @@ ul {
     }
 
     main img {
-        width: 12rem;
-        height: 8rem;
+        width: 8rem;
+        height: 6rem;
         padding: 1rem;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
     }
 
     .jobs {
