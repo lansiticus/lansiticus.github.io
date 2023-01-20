@@ -7,7 +7,6 @@
 header {
     display: flex;
     flex-direction: column;
-    height: 35vh;
 }
 body {
     display: flex;
@@ -40,7 +39,6 @@ div p:last-child {
 main {
     display: flex;
     justify-content: center;
-    height: 43vh;
 }
 
 main img {
@@ -51,7 +49,6 @@ main img {
 footer {
     padding-top: 4em;
     text-align: center;
-    height: 15vh;
 }
 
 ul {
@@ -86,12 +83,7 @@ ul {
         font-size: 3vw;
     }
 
-    header {
-        height: 25vh;
-    }
-
     main {
-        height: 60vh;
         flex-direction: column;
         justify-items: center;
         text-align: center;
@@ -109,23 +101,14 @@ ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 20vh;
     }
     
 }
 
 @media screen and (max-width:750px) {
-    header {
-        height: 15vh;
-    }
-
-    main {
-        height: 70vh;
-    }
 
     main img {
         width: 8rem;
-        height: 6rem;
         padding: 1rem;
     }
 
@@ -142,9 +125,6 @@ ul {
         flex-direction: column;
     }
 
-    .jobtext {
-        height: 1.5em;
-    }
     p {
         margin: 0px;
         padding: 0px;
