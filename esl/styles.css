@@ -18,6 +18,7 @@ span {
     font-family: 'Malgun Gothic', sans-serif;
     word-break: keep-all;
 }
+
 strong {
     padding: 1rem;
     font-size: 1.5rem;
@@ -65,9 +66,10 @@ strong {
     margin-top: 1rem;
     border: none;
     border-radius: 25px;
-    padding: .75rem 1.25rem;
+    padding: .75rem 0rem;
     font-size: 1rem;
     color: white;
+    font-weight: 700;
     background-color: navy;
     width: 10rem;
 }
@@ -76,14 +78,24 @@ strong {
 .description {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
     background-color: aqua;
     text-align: center;
-
+    padding: 1rem .5rem;
 }
 
 .description p {
     padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.description p:last-child span{
+    color: navy;
+    font-weight: 800;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    line-height: 3rem;
 }
 
 
@@ -112,6 +124,8 @@ strong {
     padding: .25rem;
     font-size: 2rem;
     color: black;
+
+    
 }
 
 .version-price {
@@ -123,8 +137,10 @@ strong {
 .version-item{
     border-bottom: 1px solid grey;
     padding: .75rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
+    font-family: 'Malgun Gothic', sans-serif;
+    word-break: keep-all;
 }
 
 .version-item:last-child {
@@ -134,9 +150,10 @@ strong {
 }
 
 .btn-plain {
-    font-weight: normal;
+    font-weight: 700;
     color: black;
     background-color: gray;
+    padding: .75rem 0rem;
 }
 
 .version-price-featured {
@@ -144,26 +161,7 @@ strong {
     background-color: navy;
 }
 
-.social {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    text-align: center;
-
-}
-
-
-.social-links {
-    margin-top: .75rem;
-}
-
-.social-links img {
-    width: 50px;
-}
-
-.social-link {
-    margin: 0 .25rem;
-}
-
+/* FOOTER STYLES */
 .footer {
     padding: 1rem 0;
     font-variant: small-caps;
@@ -172,18 +170,29 @@ strong {
     display: flex;
     flex-direction: column;
 }
-
 .footer-links {
     margin-bottom: .75rem;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
 }
-
 .footer-link {
     margin: 0 .25rem;
 }
-
+.social {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.social-links {
+    margin-top: .75rem;
+}
+.social-links img {
+    width: 50px;
+}
+.social-link {
+    margin: 0 .25rem;
+}
 .copyright {
     font-style: italic;
     font-size: 1rem;
