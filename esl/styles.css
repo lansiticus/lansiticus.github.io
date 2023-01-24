@@ -1,3 +1,11 @@
+/* COLOR PALLETE
+DUKE BLUE #000B9D
+ROCKET METALLIC #857E7B
+CORNFLOWER BLUE #7699D4
+WHITE #FCFCFC
+BLACK CHOCOLATE #1E2019
+RUBY RED #9A031E */
+
 /* GLOBAL STYLES */
 * {
     padding: 0px;
@@ -24,7 +32,13 @@ strong {
     text-align: center;
     font-style: italic;
 }
+a:hover {
+    color: #9A031E;
+}
 
+button:hover {
+    color: #9A031E;
+}
 /* HEADER STYLES */
 .header {
     background: url(/esl/bgimg.jpg);
@@ -67,7 +81,7 @@ strong {
     font-size: 1rem;
     color: white;
     font-weight: 700;
-    background-color: navy;
+    background-color: #000B9D;
     width: 10rem;
 }
 
@@ -75,7 +89,7 @@ strong {
 .description {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #7699D4;
     text-align: center;
     padding: 1rem .5rem;
 }
@@ -86,7 +100,7 @@ strong {
 
 }
 .description p:last-child span{
-    color: navy;
+    color: #000B9D;
     font-weight: 800;
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -96,13 +110,13 @@ strong {
 /* PRODUCT STYLES */
 .product-versions{
     padding: 1rem;
-    background-color: aqua;
+    background-color: #7699D4;
     display: flex;
     flex-direction: column;
 }
 .product-version{
 
-    border: 1px solid grey;
+    border: 1px solid #857E7B;
     text-align: center;
     background-color: white;
     padding: 1rem;
@@ -120,10 +134,10 @@ strong {
 .version-price {
     padding: .75rem;
     font-size: 1.5rem;
-    background-color: lightgray;
+    background-color: #857E7B;
 }
 .version-item{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #857E7B;
     padding: .75rem;
     font-size: 1.5rem;
     color: black;
@@ -138,12 +152,12 @@ strong {
 .btn-plain {
     font-weight: 700;
     color: black;
-    background-color: gray;
+    background-color: #857E7B;
     padding: .75rem 0rem;
 }
 .version-price-featured {
     color:white;
-    background-color: navy;
+    background-color: #000B9D;
 }
 
 /* FOOTER STYLES */
@@ -151,7 +165,7 @@ strong {
     padding: 1rem 0;
     font-variant: small-caps;
     text-align: center;
-    background-color: gray;
+    background-color: #857E7B;
     display: flex;
     flex-direction: column;
 }
