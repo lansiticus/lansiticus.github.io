@@ -11,27 +11,23 @@ body {
 }
 
 /* NAVIGATION */
-
 .mainnav a {
   text-decoration: none;
   color: white;
   display: block;
-  height: 100%;
   margin: 0;
   padding: 0;
+
 }
-.mainnav ul a:hover, .dropdown:hover .dropbtn {
-background-color: red;
-}
+
 .mainnav ul {
-  display: flex;
-  justify-content:space-around;
-  flex-wrap: wrap;
   align-items: center;
   font-weight: 700;
   margin: 0;
   padding: 0;
+  max-width: 250px;
 }
+
 .mainnav li {
   font-size: 2rem;
   margin: 0;
@@ -40,18 +36,15 @@ background-color: red;
 .mainnav img {
   height: 3rem;
   margin: 0;
-  padding: 1rem;
 }
-.mainnav ul li:last-child {
+.mainnav .watch {
   background-color: red;
-  padding: .6rem 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem 1rem;
   border-radius: 26px;
-  align-items: self;
-  justify-content: end;
   font-weight: 700;
 }
-.mainnav ul li:last-child a:hover {
+
+.watch a:hover {
   color: navy;
 }
 
@@ -71,24 +64,15 @@ background-color: red;
 }
 
 .partnav ul{
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
   border: 1px solid slategray;
   font-weight: 700;
-  padding-left: 0;
-  padding-top: 0;
-  margin: 0;
   background-color: slategray;
+  padding-left: 0;
+  text-align: center;
 }
 
 .partnav li{
-  flex: 1 0 auto;
-  flex-wrap: wrap;
-  margin: 0;
   font-size: 1.5rem;
-  margin-top: 0rem;
-  text-align: center;
 }
 
 .currentpart {
@@ -168,88 +152,49 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (min-width: 650px){
+  .mainnav ul {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+  .mainnav img {
+    height: 3rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .mainnav ul a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+    
+  .partnav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 0;
+    margin: 0;
+  }
+  .partnav li{
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+}
 /* BREAK POINTS: 
     -AT 3 CARD LEVEL (INCLUDE NAV BAR FONT)
     -AT 2 CARD LEVEL (INCLUDE NAV BAR, RESIZE EVERYTHING) 
     -AT 1 CARD LEVEL (NAV MENU CHANGES TO DROPDOWN)
-  
+    -ADD MODAL IMAGES
+    -ADD SOUND
+    -ONCE SOUND IS DONE, DIFFERENTIATE CARD SIZES
 */
- /* Style the Image Used to Trigger the Modal */
- #myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-} 
