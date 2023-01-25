@@ -2,77 +2,88 @@ body 	{
 	color: white;
 	background-color: black;
 	font-family: helvetica;
-	}
-
-a {
- text-decoration: none; 
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img{
+  width: 30rem;
+}
+h1  {
+  color:white;
+  font-family:"Gill Sans";
+  font-weight: 100;
+  text-align: center;
+  font-size: 48px;
 }
 
-.fleft {
-  float: left;
-  padding: 20px;
-  font-size: 24px;
+.shows ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.fright {
-  float: right;
-  padding: 20px;
-  font-size: 24px;
+.shows li{
+  list-style: none;
 }
+h2  { 
+  text-align: center;
+}
+.languages ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.languages li {
+  list-style: none;
+}
+.parts ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.parts li {
+  list-style: none;
+}
+.parts img{
+  height: 10rem;
+  padding: 1rem;
+}
+figcaption {
+  color:white;
+  font-family:"Gill Sans";
+  font-weight: 100;
+  text-align: center;
+  font-size: 48px;
 
+}
+.languages img {
+  height: 150px;
+  padding: 10px;
+}
 p{
   text-align: center;
   border-style: solid;
   border-color: white;
   padding: 5px;
 }
-  h1  {
-    color:white;
-    font-family:"Gill Sans";
-    font-weight: 100;
-    text-align: center;
-    font-size: 48px;
-  }
-
-  h2  { 
-      text-align: center;
-  }
-
-  input[type="checkbox"]{
+a {
+  text-decoration: none; 
+ }
+input[type="checkbox"]{
     opacity:0
   }
-  .flag{
+.flag{
     border-radius: 20%;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    height: auto;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-img {
-  height: 150px;
-  padding: 10px;
-}
-li {
-  text-align: left;
-}
-ul {
-  list-style: none;
 }
 
-h3 {
-  text-align: center;
-}
+
+
 
  /* Style the Image Used to Trigger the Modal */
  #myImg {
