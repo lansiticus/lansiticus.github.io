@@ -26,6 +26,7 @@ background-color: red;
 .mainnav ul {
   display: flex;
   justify-content:space-around;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: 700;
   margin: 0;
@@ -44,6 +45,7 @@ background-color: red;
 .mainnav ul li:last-child {
   background-color: red;
   padding: .6rem 1rem;
+  margin-bottom: 1rem;
   border-radius: 26px;
   align-items: self;
   justify-content: end;
@@ -72,22 +74,39 @@ background-color: red;
   display: flex;
   justify-content:space-around;
   align-items: center;
+  border: 1px solid slategray;
   font-weight: 700;
+  padding-left: 0;
   padding-top: 0;
-  margin-top: 0;
+  margin: 0;
   background-color: slategray;
 }
 
 .partnav li{
-  padding: .5rem 1rem;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  margin: 0;
   font-size: 1.5rem;
   margin-top: 0rem;
+  text-align: center;
 }
 
 .currentpart {
   background-color: black;
-  padding: .5rem 2rem
+  padding: 1rem;
 }
+.partnav a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem;
+  margin: 0;
+}
+.partnav a:hover {
+  background-color: red;
+  color: white;
+}
+
 /* MAIN CONTENT */
 main {
   display: flex;
