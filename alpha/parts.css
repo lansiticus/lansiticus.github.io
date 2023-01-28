@@ -4,10 +4,19 @@ html {
 }
 
 /* GLOBAL STYLES */
+
+header {
+  max-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 10em;
+}
+
 body {
 	color: white;
 	background-color:black;
-	font-family: helvetica;
+  font-family: helvetica;
 }
 
 /* NAVIGATION */
@@ -17,21 +26,26 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-
 }
-
+.mainnav ul a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  }
+  
 .mainnav ul {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   font-weight: 700;
   margin: 0;
   padding: 0;
-  max-width: 250px;
+  max-width: 650px;
+  background-color: black;
 }
 
 .mainnav li {
   font-size: 2rem;
   margin: 0;
-  padding: 0;
+
 }
 .mainnav img {
   height: 3rem;
@@ -69,6 +83,7 @@ body {
   background-color: slategray;
   padding-left: 0;
   text-align: center;
+  margin: 0;
 }
 
 .partnav li{
@@ -124,6 +139,10 @@ h2 {
     justify-content: center;
   }
 
+.cards img:hover {
+  opacity: .7;
+}
+
 img {
   height: 150px;
   padding: 10px;
@@ -156,6 +175,7 @@ footer {
 @media screen and (min-width: 650px){
   .mainnav ul {
     display: flex;
+    flex-direction: row;
     justify-content:space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -166,8 +186,12 @@ footer {
   .mainnav img {
     height: 3rem;
     margin: 0;
-    padding: 1rem;
+    padding: 1.15rem;
   }
+  .mainnav a {
+    height:fit-content;
+    }
+    
   .mainnav ul a:hover, .dropdown:hover .dropbtn {
     background-color: red;
     }
