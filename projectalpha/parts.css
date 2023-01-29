@@ -1,3 +1,10 @@
+/* COLOR PALLETE
+DUKE BLUE #000B9D
+ROCKET METALLIC #857E7B
+CORNFLOWER BLUE #7699D4
+WHITE #FCFCFC
+BLACK CHOCOLATE #1E2019
+RUBY RED #9A031E */
 
 html {
   box-sizing: content-box;
@@ -5,18 +12,12 @@ html {
 
 /* GLOBAL STYLES */
 
-header {
-  max-width: none;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  height: 10em;
-}
+
 
 body {
 	color: white;
-	background-color:black;
-  font-family: helvetica;
+	background-color: #7699D4;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* NAVIGATION */
@@ -28,18 +29,18 @@ body {
   padding: 0;
 }
 .mainnav ul a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #9A031E;
   }
   
 .mainnav ul {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   font-weight: 700;
   margin: 0;
   padding: 0;
   max-width: 650px;
-  background-color: black;
+  background-color: #1E2019;
 }
 
 .mainnav li {
@@ -52,7 +53,7 @@ body {
   margin: 0;
 }
 .mainnav .watch {
-  background-color: red;
+  background-color: #9A031E;
   padding: 1rem 1rem;
   border-radius: 26px;
   font-weight: 700;
@@ -78,6 +79,7 @@ body {
 }
 
 .partnav ul{
+  display: none;
   border: 1px solid slategray;
   font-weight: 700;
   background-color: slategray;
@@ -91,7 +93,7 @@ body {
 }
 
 .currentpart {
-  background-color: black;
+  background-color: #1E2019;
   padding: 1rem;
 }
 .partnav a{
@@ -102,7 +104,7 @@ body {
   margin: 0;
 }
 .partnav a:hover {
-  background-color: red;
+  background-color: #9A031E;
   color: white;
 }
 
@@ -173,6 +175,14 @@ footer {
 }
 
 @media screen and (min-width: 650px){
+
+  header {
+    max-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 10em;
+  }
   .mainnav ul {
     display: flex;
     flex-direction: row;
@@ -183,6 +193,7 @@ footer {
     padding: 0;
     max-width: none;
   }
+  
   .mainnav img {
     height: 3rem;
     margin: 0;
@@ -193,7 +204,7 @@ footer {
     }
     
   .mainnav ul a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #9A031E;
     }
     
   .partnav ul{

@@ -1,8 +1,14 @@
-/* GLOBAL STYLES */
+/* COLOR PALLETE
+DUKE BLUE #000B9D
+ROCKET METALLIC #857E7B
+CORNFLOWER BLUE #7699D4
+WHITE #FCFCFC
+BLACK CHOCOLATE #1E2019
+RUBY RED #9A031E */
 
 body 	{
 	color: white;
-	background-color: black;
+	background-color: #7699D4;
 	font-family: helvetica;
 }
 
@@ -20,7 +26,7 @@ header img{
 
 h1  {
   color:white;
-  font-family:"Gill Sans";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   text-align: center;
   font-size: 48px;
@@ -80,7 +86,7 @@ a {
 }
 figcaption {
   color:white;
-  font-family:"Gill Sans";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   text-align: center;
   font-size: 48px;

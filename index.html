@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lance Williams</title>
 </head>
 <body>
-    <!-- update -->
     <div class="container">
         <header>
+            <a href="index.html"><img src="logo.png"></a>
+            <nav>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Software Development</li>
+                    <li>Education</li>
+                </ul>
+            </nav>
             <h1>Lance Eric Williams</h1>
-            <h2>Project Manager | Software Developer | Educator</h2>
         </header>
         <main>
             <section>
-            <div class="jobs">
-                <a href="pm/index.html"><img src="/images/pm.jpg"></a>
-                <div class="jobtext">
-                <p>Project Management</p>
-                <p>Resume (PDF 5kb, DOC 5kb)</p>
+                <div class="intro">
+                    <h2>Work Portfolio</h2>
+                <h3>Project Manager | Software Developer | Educator</h3>
+                <p>Welcome to lewprojects.com, the portforlio of Lance Williams. Below you'll find my resume and samples of my work in the fields of project managment, software development and education.</p>
+                <button>Contact Me</button>
                 </div>
+                <div class="intro-img">
+                    <img src="introimg">
+                </div>
+            </section>
+            <section class="portfolio">
+            <h2>Portfolios</h2>
+            <div class="jobs">
+                <a href="pm/index.html"><figure><img src="/images/pm.jpg"><figcaption>Project Management</figcaption></figure></a>
+                <p>Resume (PDF 5kb, DOC 5kb)</p>
             </div>
             <div class="jobs">
-                <a href="dev/index.html"><img src="images/dev.png"></a>
-                <div class="jobtext">
-                    <p>Software Development</p>
-                    <p>Resume (PDF 5kb, DOC 5kb)</p>
-                </div>
+                <a href="dev/index.html"><figure><img src="images/dev.png"></figure><figcaption>Software Development</figcaption></a>
+                <p>Resume (PDF 5kb, DOC 5kb)</p>
             </div>
             <div class="jobs">
                 <a href="esl/index.html"><img src="/images/esl.png"></a>
@@ -38,16 +55,19 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="about">
         <h2>About Lance</h2>
         <img src="profilepic.jpeg">
         <p>Over the last seven years, I’ve continuously developed my project management ability by applying problem solving skills to difficult environments. I worked through legal compliance hurdles to found an English academy in South Korea. By working with customers and stakeholders, I developed an innovative curriculum that netted $85,000 in its first year of operation. Three years ago, I agreed to manage a charter school instrumental program with a very tight yearly budget of $10,000. Within 2 years, I was able to triple the scope of program and double its membership.</p>
     </section>
         </main>
         <footer>
-            <ul>
-                <li><a href="mailto:lanceericwilliams@gmail.com"><img class="icon" src="/images/emailicon.png"></a></li>
-                <li><a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><img class="icon" src="/images/linkedinicon.webp"></a></li>
+            <h2>Contact Me</h2>
+            <ul class="contact">
+                <li><a href="mailto:lanceericwilliams@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a></li>
             </ul>
             <small>&copy; 2023 Lance Williams</small>
         </footer>

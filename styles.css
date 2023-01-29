@@ -1,39 +1,44 @@
+/* COLOR PALLETE
+DUKE BLUE #000B9D
+ROCKET METALLIC #857E7B
+CORNFLOWER BLUE #7699D4
+WHITE #FCFCFC
+BLACK CHOCOLATE #1E2019
+RUBY RED #9A031E */
+
 * {
     margin: 0;
     padding: 0;
     color: white;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    background-color: #1E2019;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 66vw;
 }
 
 header {
     display: flex;
     flex-direction: column;
 }
-body {
-    display: flex;
-    justify-content: center;
-    background-color: navy;
+nav {
+    font-family: 'Averia Serif Libre', cursive;
 }
+
 h1 {
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 6vw;
     padding-top: .5em;
     text-align: center;
 }
-
-h2 {
-    font-size: 2vw;
-    text-align: center;
-    padding-bottom: 2em;
-}
-
-p {
-    text-align: center;
-    padding: 5px;
-    font-size: 1.5em;
-}
-
-div p:last-child {
-    font-size: 1em;
+a {
+    text-decoration: none;
 }
 
 main {
@@ -42,32 +47,33 @@ main {
     align-items: center;
 }
 
-main img {
-    width: 15vw;
+h2 {
+    font-size: 2vw;
+    text-align: center;
 }
 
+p {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.portfolio {
+    background-color:#9A031E;
+}
 footer {
-    padding-top: 4em;
     text-align: center;
     position: sticky;
     bottom: 0;
-    z-index: 10;
+    z-index: 2;
+    background-color: #857E7B;
 }
 
-ul {
-
-    display: flex;
-    list-style: none;
-    justify-content: center;
+footer a:hover {
+    color: #000B9D;
 }
 
-.container {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    width: 66vw;
-}
 
 .icon {
     width: 4rem;
@@ -81,6 +87,47 @@ ul {
     padding: 1.5rem;
 
 }
+.about {
+    background-color: #7699D4;
+}
+.jobs figcaption {
+    display: flex;
+
+}
+.jobs figure:hover {
+    opacity: .7;
+   
+}
+
+.jobs figure:hover figcaption {
+    color:#000B9D;
+
+}
+
+
+
+i:hover {
+    color:#000B9D;
+}
+
+
+
+
+
+main img {
+    width: 15vw;
+}
+
+
+
+ul {
+
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+
 
 @media screen and (max-width:1200px) {
     .container {
@@ -96,7 +143,7 @@ ul {
     }
 
     main {
-        flex-direction: column;
+        flex-direction: columns;
         justify-items: center;
         text-align: center;
     }
@@ -107,13 +154,6 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .jobtext {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     
 }
