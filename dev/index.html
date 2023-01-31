@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="dP0HdnbJjdgiaovVosoVm6LyjsNgwSIJ_Zp8_P_xZd0" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dev/dev.css">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Lance Williams's Project Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lance Williams</title>
 </head>
 <body>
-    <div class="container">
+
+<div class="container">
     <header>
-        <h1>Lance Williams</h1>
-        <h2>Software Development Portfolio</h2>
+        <a href="index.html"><img src="logo.png"></a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Project Management</li>
+                <li>Software Development</li>
+                <li>Education</li>
+            </ul>
+        </nav>
+        <h1>Lance Eric Williams</h1>
     </header>
     <main>
-    <h2>HTML Courses</h2>
-    <ul>
-        <li><a href="HTML Essential Training/HTMLET.html">HTML Essential Training</a> - Learning the capabilites of HTML markup</li>
-        <li><a href="HTML and CSS: Linking/links.html">HTML and CSS: Linking</a> - Linking from anything to anything</li>
-        <li><a href="HTML Images and Figures/challenge1.html">HTML Images and Figures</a> - Using images in HTML</li>
-        <dl>
-            <li><dt>Crafting Meaningful HTML - Marking up a simple article using HTML</dt></li>
-            <dd><a href="Crafting Meaningful HTML/challenge.html">Semantic Content Markup</a></dd>
-            <dd><a href="Crafting Meaningful HTML/Salad.html">Semantic Markup for Lists, Figures, Navbar, etc.</a></dd>
-            <dd><a href="Crafting Meaningful HTML/miscmarkup.html">Misc. Other Markup</a></dd>
-        </dl>
-    </ul>
-
-    <h2>CSS Courses</h2>
-        <ul>
-            <li><a href="Layout Templates/floatlayout.html">Boilerplate layout using floats</a></li>
-            <li><a href="Layout Templates/inlineblocklayout.html">Boilerplate layout using inline-block</a></li>
-            <li><a href="FF2FB2G/index.html">CSS From Floats to Flexbox to Grids</a></li>
-        </ul>
+        <section>
+            <div class="intro">
+                <h2>Software Development Portfolio</h2>
+                <h3>Resume (PDF, DOC)</h3>
+                <button>Contact Me</button>
+            </div>
+        </section>
+        <section class="projects">
+        <h2>Featured Projects</h2>
+        <div class="devproject">
+            <a href="pm/index.html"><figure><img src="/images/pm.jpg"><figcaption>Image Gallery</figcaption></figure></a>
+            <p>Using HTML and CSS to create a responsive image gallery.</p>
+        </div>
+        <div class="devproject">
+        <div class="devproject">
+            <a href="pm/index.html"><figure><img src="/images/pm.jpg"><figcaption>Landing Page</figcaption></figure></a>
+            <p>Using HTML and CSS to create a responsive product landing page.</p>
+        </div>
+        <div class="devproject">
+            <a href="esl/index.html"><img src="/images/esl.png"></a>
+            <div class="jobtext">
+                <a href="dev/index.html"><figure><img src="images/dev.png"></figure><figcaption>JavaScript Arcade</figcaption></a>
+                <p>Using HTML, CSS and JavaScript to create an ever expanding collection of games.</p>
+            </div>
+        </div>
+        <p>More projects coming soon...</p>
+    </section>
     </main>
     <footer>
-        <ul class="icon">
-            <li><a href="mailto:lanceericwilliams@gmail.com"><img class="icon" src="/images/emailicon.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><img class="icon" src="/images/linkedinicon.webp"></a></li>
+        <h2>Contact Me</h2>
+        <ul class="contact">
+            <li><a href="mailto:lanceericwilliams@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a></li>
         </ul>
         <small>&copy; 2023 Lance Williams</small>
     </footer>
-    </div>
+</div>
 </body>
 </html>
