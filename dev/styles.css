@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #1E2019;
-    background-image: radial-gradient(circle farthest-side at center top, hsl(0, 0%, 100%) 0%, #292c22  100%);
+    background-image: radial-gradient(circle farthest-side at center top, hsl(0, 0%, 100%) 0%, #292c22 100%);
     margin: 0;
 }
 
@@ -111,6 +111,9 @@ h1 {
     font-size: 1.25rem;
     font-style: italic;
 }
+.intro h4 {
+    padding-left: 2rem;
+}
 .intro p {
     font-size: 1.25rem;
     font-family: 'Averia Serif Libre', cursive;
@@ -118,8 +121,9 @@ h1 {
 .intro-img {
     display: none;
     flex: 1 0 18%;
-    text-align: right;
+    justify-content: flex-end;
 }
+
 .contact-btn {
     padding: 2rem;
 }
@@ -128,6 +132,20 @@ h1 {
 }
 .intro-img img {
     width: 15rem;
+}
+.intro .workexp {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-style:normal;
+}
+
+.featured {
+    font-size: 2rem;
+    color: #9A031E;
+    padding-bottom: none;
+}
+.intro li {
+    list-style: none;
 }
 
 /* PORTFOLIO */
@@ -182,7 +200,7 @@ h1 {
     
 }
 .biosec h2 {
-    color: #1E2019;
+    color: #9A031E;
     font-size: 2.5rem;
     padding: 2rem;
     margin: 0;
@@ -202,7 +220,7 @@ h1 {
     padding: 0;
 }
 #contact h2 {
-    color: #1E2019;
+    color: #9A031E;
     font-size: 2.5rem;
     padding: 0 2rem;
     margin: 0;
@@ -278,6 +296,8 @@ h1 {
 .intro-img {
     display: flex;
 }
+
+
 .intro h2, .intro h3, .intro p {
     padding-left: 2rem;
 }

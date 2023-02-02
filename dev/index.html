@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,60 +13,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lance Williams</title>
 </head>
-<body>
+<body class="hero">
+    <div class="container">
+        <header>
+            <div class="logo">
+            <a href="/index.html"><img src="logo.png"></a>
+            </div>
+            <div class="navtitle">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html" class="btn">Home</a></li>
+                        <li><a href="/pm/index.html" class="btn">Project Management</a></li>
+                        <li><a href="/dev/index.html" class="btn">Software Development</a></li>
+                        <li><a href="/edu/index.html" class="btn">Education</a></li>
+                    </ul>
+                </nav>
+                <h1>Lance Eric Williams</h1>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="introtext">
+                    <h2>Web Development Portfolio</h2>
+                    <p>Resume (<a>PDF 5kb</a>, <a>DOC 5kb</a>)</p>
+                    <div class="contact-btn">
+                        <a href="#contact" class="btn">Contact Me</a>
+                    </div>
+                </div>
 
-<div class="container">
-    <header>
-        <a href="index.html"><img src="logo.png"></a>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Project Management</li>
-                <li>Software Development</li>
-                <li>Education</li>
-            </ul>
-        </nav>
-        <h1>Lance Eric Williams</h1>
-    </header>
-    <main>
-        <section>
-            <div class="intro">
-                <h2>Software Development Portfolio</h2>
-                <h3>Resume (PDF, DOC)</h3>
-                <button>Contact Me</button>
+                <div class="intro-img dev">
+                    <img src="devlarge.jpg">
+                </div>
+            </section>
+            <h3 class="featured">Featured Projects</h3>
+            <section class="portfolio">
+                <div class="fields">
+
+                    <div class="jobs">
+                        <a href="/projectalpha/e1p1.html" target="_blank"><figure><img src="imggal.png"><figcaption>Image Gallery</figcaption></figure></a>
+                        <p>Resume (<a>PDF 5kb</a>, <a>DOC 5kb</a>)</p>
+                    </div>
+                    <div class="jobs">
+                        <a href="/edu/ltkt.html" target="_blank"><figure><img src="landingpg.png"><figcaption>Product Landing Page</figcaption></figure></a>
+                        <p>Resume (<a>PDF 5kb</a>, <a>DOC 5kb</a>)</p>
+                    </div>
+                    <div class="jobs">
+                        <a href="games.html"><figure><img src="game.png"><figcaption>JavaScript Arcade</figcaption></figure></a>
+                        <p>Resume (<a>PDF 5kb</a>, <a>DOC 5kb</a>)</p>
+                    </div>
+                </div>
+            </section>
+        <section id="contact">
+            <h2>Contact Lance</h2>
+            <p>If you would like to know more about my work or would like to discuss a project, please get in touch.</p>
+            <div class="contact">
+            <p>You can email him at <span style="font-style:italic">lanceericwilliams at gmail dot com</span> or find him at LinkedIn.</p>
+                <a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
             </div>
         </section>
-        <section class="projects">
-        <h2>Featured Projects</h2>
-        <div class="devproject">
-            <a href="pm/index.html"><figure><img src="/images/pm.jpg"><figcaption>Image Gallery</figcaption></figure></a>
-            <p>Using HTML and CSS to create a responsive image gallery.</p>
-        </div>
-        <div class="devproject">
-        <div class="devproject">
-            <a href="pm/index.html"><figure><img src="/images/pm.jpg"><figcaption>Landing Page</figcaption></figure></a>
-            <p>Using HTML and CSS to create a responsive product landing page.</p>
-        </div>
-        <div class="devproject">
-            <a href="esl/index.html"><img src="/images/esl.png"></a>
-            <div class="jobtext">
-                <a href="dev/index.html"><figure><img src="images/dev.png"></figure><figcaption>JavaScript Arcade</figcaption></a>
-                <p>Using HTML, CSS and JavaScript to create an ever expanding collection of games.</p>
+        </main>
+        <footer>
+            
+            <div class="footnav">
+                <nav>
+                    <ul>
+                        <li><a href=/index.html>Home</a></li>
+                        <li><a href="/pm/index.html">Project Management</a></li>
+                        <li><a href="/dev/index.html">Software Development</a></li>
+                        <li><a href="/edu/index.html">Education</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <p>More projects coming soon...</p>
-    </section>
-    </main>
-    <footer>
-        <h2>Contact Me</h2>
-        <ul class="contact">
-            <li><a href="mailto:lanceericwilliams@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/lance-williams-4339a61a6" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a></li>
-        </ul>
-        <small>&copy; 2023 Lance Williams</small>
-    </footer>
-</div>
+            <small>&copy; 2023 Lance Williams</small>
+        </footer>
+    </div>
 </body>
 </html>
