@@ -123,7 +123,13 @@ h1 {
     flex: 1 0 18%;
     justify-content: flex-end;
 }
-
+.intro-text .resume p a {
+    text-decoration: none;
+    color: white;
+}
+.resume a:hover{
+    color: #9A031E;
+}
 .contact-btn {
     padding: 2rem;
 }

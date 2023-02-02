@@ -124,6 +124,15 @@ h1 {
     margin-top: .5rem;
     padding-left: 3rem;
 }
+.resume a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume a:hover{
+    color: #9A031E;
+    background-color:#857E7B;
+}
 .intro .certs {
     font-size: 2rem;
     font-style: normal;
@@ -185,13 +194,45 @@ h1 {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #1E2019;
+    color: white;
+
 }
 
 .jobsec .jobs {
     text-align: left;
-    padding-left: 2rem;
+    margin-left: 0;
+    flex: 3 0 66%;
+    padding-left: 0;
 }
+.jobsec .jobs h3 {
+    margin-top: 0;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #9A031E;
+}
+.jobsec .jobs h4 {
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.jobsec .pro-img {
+    flex: 1 0 33%;
+}
+.jobsec .jobs p {
+    padding-left: 2rem;
+    font-family: 'Averia Serif Libre', cursive;
 
+}
+.jobsec .jobs li {
+    font-family: 'Averia Serif Libre', cursive;
+    padding-bottom: 1rem;
+}
+.pro-img img {
+    width: 100%;
+    padding-left: 1rem;
+}
 .jobs figcaption {
     font-size: 1.5rem;
     text-align: center;
@@ -202,7 +243,7 @@ h1 {
 .jobs p a {
     color: white;
 }
-.jobs p a:hover {
+.jobsec .jobs a:hover {
     color: #9A031E;
 }
 .jobs img {
@@ -327,8 +368,11 @@ h1 {
 .intro-img {
     display: flex;
 }
-.intro h2, .intro h3, .intro p {
+.intro h2, .intro h3 {
     padding-left: 2rem;
+}
+.intro p {
+    padding-left: 3rem;
 }
 .fields {
     flex-direction: row;
