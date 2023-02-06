@@ -14,10 +14,13 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #1E2019;
-    background-image: radial-gradient(circle farthest-side at center top, hsl(0, 0%, 100%) 0%, #1E2019  100%);
+    background-image: radial-gradient(circle farthest-side at center top, hsl(0, 0%, 100%) 0%, #4d5240  100%);
     margin: 0;
 }
 
+.fa {
+    margin: 1rem;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -87,13 +90,14 @@ h1 {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     box-sizing: border-box;
     width: 100%;
     border: 3px solid #1E2019;
     font-size: 1.25rem;
     color: white;
     background-color: #1E2019;
-    background-image: radial-gradient(ellipse closest-corner at center, #857E7B 0%, #1E2019 100%);
+    background-image: radial-gradient(ellipse closest-corner at center, #857E7B 0%,  #1E2019 100%);
 }
 .intro-text{
     flex: 2 0 78%;
@@ -144,12 +148,13 @@ h1 {
 .intro ul {
     padding-top: 0;
     margin-top: .5rem;
-    padding-left: 4rem;
+    padding-left: 0;
 }
 
 .intro li{
     font-size: 1.25rem;
     font-family: 'Averia Serif Libre', cursive;
+    list-style: none;
 }
 .contact-btn {
     padding: 2rem;
@@ -201,7 +206,7 @@ p {
 }
 .jobsec {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 1px solid #1E2019;
     color: white;
 
@@ -398,6 +403,15 @@ main .arcade{
 .fields {
     flex-direction: row;
     padding-top: 2rem;
+}
+.jobsec {
+    flex-direction: row;
+}
+.intro ul {
+    padding-left: 4rem;
+}
+.intro li{
+    list-style: disc;
 }
 .biosec h2 {
     padding-bottom: 0;
